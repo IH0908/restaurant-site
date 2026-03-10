@@ -280,18 +280,31 @@ a {
   max-width: 700px;
   margin: 0 auto;
   border-collapse: collapse;
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  background: #10121b;
+  box-shadow:
+    0 18px 45px rgba(0,0,0,0.9),
+    0 0 0 1px rgba(255,255,255,0.04);
+  border-radius: 14px;
+  overflow: hidden;
 }
 
 .menu-table th,
 .menu-table td {
-  padding: 0.75rem 1rem;
-  border-bottom: 1px solid #eee;
+  padding: 0.85rem 1.1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
 .menu-table th {
-  background-color: #f6f6f6;
+  background: linear-gradient(120deg, #151827, #181b2a);
+  color: #e5e7f5;
+}
+
+.menu-table td {
+  color: #d7d9e6;
+}
+
+.menu-table tr:last-child td {
+  border-bottom: none;
 }
 
 /* Gallery slider */
