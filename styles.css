@@ -248,21 +248,31 @@ a {
 }
 
 .menu-card {
-  background-color: #fff;
-  padding: 1rem 1.25rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  background: linear-gradient(145deg, #151827, #0a0b13);
+  padding: 1.1rem 1.25rem;
+  border-radius: 14px;
+  box-shadow:
+    0 18px 45px rgba(0,0,0,0.9),
+    0 0 0 1px rgba(255,255,255,0.05);
+  border: 1px solid rgba(255, 122, 60, 0.12);
+}
+
+.menu-card h3 {
+  margin: 0 0 0.3rem;
+  color: #ffffff;           
+  font-weight: 700;
 }
 
 .menu-desc {
   font-size: 0.9rem;
-  color: #555;
+  color: #c4c7d5;           
 }
+
 
 .menu-price {
   margin-top: 0.5rem;
   font-weight: 700;
-  color: #e67e22;
+  color: #ffd3a3;        
 }
 
 .menu-table {
