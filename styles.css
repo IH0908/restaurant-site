@@ -169,6 +169,36 @@ a {
 
 /* Menu */
 
+.menu-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.menu-img {
+  width: 110px;         
+  height: 80px;         
+  object-fit: cover;     
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.menu-text {
+  flex: 1;
+}
+
+
+@media (max-width: 600px) {
+  .menu-item {
+    flex-direction: column;
+  }
+
+  .menu-img {
+    width: 100%;
+    height: 180px;
+  }
+}
+
 .menu-section {
   padding: 1.5rem 1rem;
 }
