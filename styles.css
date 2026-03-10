@@ -89,7 +89,7 @@ a {
   position: relative;
   height: 60vh;
   min-height: 360px;
-  background-image: url("images/hero.jpg");
+  background-image: url(https://mrhero.com/wp-content/uploads/2024/04/Original-Italian-1536x754.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -246,7 +246,7 @@ a {
   width: 100%;
   flex-shrink: 0;
   object-fit: cover;
-  max-height: 350px;
+  max-height: 250px;
 }
 
 .slider-btn {
