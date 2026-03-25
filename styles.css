@@ -415,6 +415,126 @@ a {
   font-size: 0.8rem;
 }
 
+.cart {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #10121b;
+  border-radius: 14px;
+  padding: 1.25rem 1.4rem;
+  box-shadow:
+    0 18px 45px rgba(0,0,0,0.9),
+    0 0 0 1px rgba(255,255,255,0.04);
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.cart-item-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.3rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.cart-item-name {
+  font-size: 0.95rem;
+}
+
+.cart-item-price,
+.cart-item-subtotal {
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.cart-item-qty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.cart-item-qty button {
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: #1f2233;
+  color: #f7f7ff;
+  cursor: pointer;
+}
+
+.cart-item-qty span {
+  min-width: 1.2rem;
+  text-align: center;
+}
+
+.cart-remove {
+  border: none;
+  background: transparent;
+  color: #ff7a3c;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.cart-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+}
+
+.cart-total-row span:first-child {
+  color: #c4c7d5;
+  margin-right: 0.5rem;
+}
+
+#cart-total {
+  font-weight: 700;
+  color: #ffd3a3;
+}
+
+.cart-clear {
+  padding-inline: 1.2rem;
+  margin-top: 0;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 600px) {
+  .cart-item-row {
+    grid-template-columns: 1.7fr 1.1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "name subtotal"
+      "qty  remove";
+  }
+
+  .cart-item-name {
+    grid-area: name;
+  }
+
+  .cart-item-subtotal {
+    grid-area: subtotal;
+    text-align: right;
+  }
+
+  .cart-item-qty {
+    grid-area: qty;
+    justify-content: flex-start;
+  }
+
+  .cart-remove {
+    grid-area: remove;
+    text-align: right;
+  }
+}
+
+
 /* RESPONSIVE DESIGN */
 
 @media (max-width: 768px) {
